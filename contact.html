@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Sam Damesin</title>
+    <meta name="description" content="">
+    <meta name="author" content="Sam Damesin">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/layout.css">
+    <link rel="stylesheet" href="static/css/skeleton.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/colorbox.css">
+    <link rel="stylesheet" href="static/css/justifiedGallery.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Kaushan+Script|Leckerli+One|Yesteryear" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+  </head>
+  <body>
+  <nav class="smallscreen" role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menus">
+      <a href="./index.html"><li>Portofolio</li></a>
+      <a href="./contact.html"><li>Contact</li></a>
+    </ul>
+  </div>
+</nav>
+    <div class="ccontainer">
+        <div class="sidebar">
+          <nav id="menu">
+            <span class="titlemenu"><span class='capi'>S</span>am <span class='capi'>D</span>amesin<span class="subtitlemnu">photography</span></span>
+            <ul class="left">
+              <li class="limenu"><a href="./index.html">Portofolio</a></li>
+            </ul>
+            <ul class="right">
+                <li class="limenu"><a href="v">Contact</a></li>
+            </ul>
+            </ul>
+          </nav>
+      </div>
+  <div >
+  <div id="main" role="main" class="maingallery">
+        <header>
+        <h2 class="">Contact page</h2>
+
+        </header>
+  <form class="form" id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbywIq9FzjV2C74muXB_lBPiYDzJlHcybdXhFPYIeCjdBpu5EWN6/exec">
+    <!-- https://github.com/dwyl/html-form-send-email-via-google-script-without-server
+    change the form action to your script url -->
+<p>All the images are available for prints, I am working with professional printers with high quality papers, and can help you with framing and special printing as well. Please get in touch to discuss. </p>
+    <fieldset class="half">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="First Name Last Name" />
+    </fieldset>
+    <fieldset class="half">
+      <label for="email">Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="display:none">
+        Must be a valid email address</span>
+    </fieldset>
+    <fieldset class="full">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="All the photographs are available for prints, please get in touch."></textarea>
+    </fieldset>
+
+    <button class="send">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting me!
+      I will get back to you soon!</h2>
+  </div>
+  </div>
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+    </div>
+    </div>
+    <footer>
+      <p>All images in this website are subject to copyright © by Sam Damesin © 2017</p>
+    </footer>
+  </body>
+</html>
